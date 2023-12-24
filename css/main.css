@@ -1,0 +1,42 @@
+.loader{
+    width: 100px;
+    height: 100px;
+    border-width: 4px;
+    border-color: #777;
+    border-radius: 50%;
+    border-style: solid solid dotted dotted;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    animation: rotat-right 3s linear infinite;
+    margin-top: -50px;
+    margin-bottom: -50px;
+}
+.loader::before{
+    content: "";
+    width: 40px;
+    height: 40px;
+    border-width: 4px;
+    border-color: #bbb6b6;
+    border-radius: 50%;
+    border-style: solid dotted solid  dotted;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    animation: rotat-right 3s linear infinite;
+ margin: auto;
+}
+
+
+
+@keyframes rotat-right {
+    0%{
+transform: rotate(0deg);
+    }
+    100%{
+transform: rotate(360deg);
+    }
+}
